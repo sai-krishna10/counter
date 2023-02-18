@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, blue, violet);
+    flex-direction: column;
+}
+
+.container {
+    height: 50vh;
+    width: 35vw;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.container a {
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.container .count input {
+    height: 7vh;
+    width: 4vw;
+    font-weight: 900;
+    background-color: black;
+    color: aliceblue;
+    pointer-events: none;
+    text-align: center;
+}
+
+.container button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .increase {
+    background-color: green;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+.container .decrease {
+    background-color: red;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+.container .reset {
+    background-color: blue;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+.container .reset:hover {
+    background-color: aliceblue;
+    color: blue;
+    cursor: pointer;
+}
+
+.container .increase:hover {
+    background-color: aliceblue;
+    color: green;
+    cursor: pointer;
+}
+
+.container .decrease:hover {
+    background-color: aliceblue;
+    color: red;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:743px) {
+    .container .count {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container .count input {
+        height: 7vh;
+        width: 10vw;
+        font-weight: 900;
+        background-color: black;
+        color: aliceblue;
+        pointer-events: none;
+        text-align: center;
+    }
+
+    .container {
+        height: 50vh;
+        width: 65vw;
+        background-color: aliceblue;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width:330px) {
+
+    .container a {
+        font-size: 20px;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+
+    .container button {
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    .container {
+        height: 50vh;
+        width: 50vw;
+        background-color: aliceblue;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+}
